@@ -1,0 +1,491 @@
+# Copyright (C) 2024 u1145h
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Database Search 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/u1145h/wp-database-search/issues\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: wp-database-search\n"
+
+#: wp-database-search.php:45
+msgid "Security check failed"
+msgstr ""
+
+#: wp-database-search.php:50
+msgid "Searching..."
+msgstr ""
+
+#: wp-database-search.php:51
+msgid "No results found"
+msgstr ""
+
+#: wp-database-search.php:52
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: includes/class-database-manager.php:45
+msgid "Invalid record ID"
+msgstr ""
+
+#: includes/class-database-manager.php:50
+msgid "Failed to delete record"
+msgstr ""
+
+#: includes/class-database-manager.php:54
+msgid "Record deleted successfully"
+msgstr ""
+
+#: includes/class-database-manager.php:75
+msgid "No valid data provided"
+msgstr ""
+
+#: includes/class-database-manager.php:82
+msgid "Record updated successfully"
+msgstr ""
+
+#: includes/class-database-manager.php:83
+msgid "Failed to update record"
+msgstr ""
+
+#: includes/class-database-manager.php:88
+msgid "Record created successfully"
+msgstr ""
+
+#: includes/class-database-manager.php:89
+msgid "Failed to create record"
+msgstr ""
+
+#: includes/class-database-manager.php:105
+msgid "No records to insert"
+msgstr ""
+
+#: includes/class-database-manager.php:120
+msgid "Record %d: Invalid data format"
+msgstr ""
+
+#: includes/class-database-manager.php:128
+msgid "Record %d: Failed to insert"
+msgstr ""
+
+#: includes/class-database-manager.php:135
+msgid "%d records inserted successfully"
+msgstr ""
+
+#: includes/class-database-manager.php:137
+msgid "%d errors occurred"
+msgstr ""
+
+#: includes/class-database-manager.php:155
+msgid "No data to export"
+msgstr ""
+
+#: includes/class-file-processor.php:35
+msgid "No file uploaded or upload error occurred"
+msgstr ""
+
+#: includes/class-file-processor.php:50
+msgid "No data found in the file"
+msgstr ""
+
+#: includes/class-file-processor.php:58
+msgid "Error processing file: %s"
+msgstr ""
+
+#: includes/class-file-processor.php:70
+msgid "File size exceeds maximum allowed size of %s"
+msgstr ""
+
+#: includes/class-file-processor.php:80
+msgid "Invalid file type. Only CSV, XLS, and XLSX files are allowed"
+msgstr ""
+
+#: includes/class-file-processor.php:88
+msgid "File is not readable"
+msgstr ""
+
+#: includes/class-file-processor.php:100
+msgid "Could not open CSV file"
+msgstr ""
+
+#: includes/class-file-processor.php:106
+msgid "Could not read CSV header"
+msgstr ""
+
+#: includes/class-file-processor.php:130
+msgid "PhpSpreadsheet library is not available. Please install it via Composer."
+msgstr ""
+
+#: includes/class-file-processor.php:140
+msgid "Excel file must have at least a header row and one data row"
+msgstr ""
+
+#: includes/class-file-processor.php:165
+msgid "Error reading Excel file: %s"
+msgstr ""
+
+#: includes/class-file-processor.php:200
+msgid "Could not create sample file"
+msgstr ""
+
+#: includes/class-file-processor.php:220
+msgid "No data to validate"
+msgstr ""
+
+#: includes/class-file-processor.php:230
+msgid "%d empty rows found and will be skipped"
+msgstr ""
+
+#: includes/class-file-processor.php:240
+msgid "Duplicate column headers found: %s"
+msgstr ""
+
+#: includes/class-file-processor.php:245
+msgid "Large dataset detected. Import may take some time."
+msgstr ""
+
+#: includes/class-admin-interface.php:25
+msgid "Database Search"
+msgstr ""
+
+#: includes/class-admin-interface.php:30
+msgid "Upload Data"
+msgstr ""
+
+#: includes/class-admin-interface.php:31
+msgid "Manage Data"
+msgstr ""
+
+#: includes/class-admin-interface.php:32
+msgid "Settings"
+msgstr ""
+
+#: includes/class-admin-interface.php:45
+msgid "Upload Excel/CSV File"
+msgstr ""
+
+#: includes/class-admin-interface.php:46
+msgid "Upload an Excel (.xls, .xlsx) or CSV file to import data into the search database."
+msgstr ""
+
+#: includes/class-admin-interface.php:52
+msgid "Select File"
+msgstr ""
+
+#: includes/class-admin-interface.php:58
+msgid "Maximum file size:"
+msgstr ""
+
+#: includes/class-admin-interface.php:60
+msgid "Supported formats: CSV, XLS, XLSX"
+msgstr ""
+
+#: includes/class-admin-interface.php:65
+msgid "Clear Existing Data"
+msgstr ""
+
+#: includes/class-admin-interface.php:70
+msgid "Clear all existing data before importing new data"
+msgstr ""
+
+#: includes/class-admin-interface.php:73
+msgid "Warning: This will permanently delete all existing records."
+msgstr ""
+
+#: includes/class-admin-interface.php:80
+msgid "Upload and Import"
+msgstr ""
+
+#: includes/class-admin-interface.php:85
+msgid "Uploading..."
+msgstr ""
+
+#: includes/class-admin-interface.php:95
+msgid "Current Statistics"
+msgstr ""
+
+#: includes/class-admin-interface.php:99
+msgid "Total Records"
+msgstr ""
+
+#: includes/class-admin-interface.php:103
+msgid "Data Columns"
+msgstr ""
+
+#: includes/class-admin-interface.php:110
+msgid "Available Columns"
+msgstr ""
+
+#: includes/class-admin-interface.php:125
+msgid "Manage Data"
+msgstr ""
+
+#: includes/class-admin-interface.php:130
+msgid "Add New Record"
+msgstr ""
+
+#: includes/class-admin-interface.php:133
+msgid "Export Data"
+msgstr ""
+
+#: includes/class-admin-interface.php:136
+msgid "Clear All Data"
+msgstr ""
+
+#: includes/class-admin-interface.php:142
+msgid "No data found. Upload a file to get started."
+msgstr ""
+
+#: includes/class-admin-interface.php:147
+msgid "ID"
+msgstr ""
+
+#: includes/class-admin-interface.php:155
+msgid "Actions"
+msgstr ""
+
+#: includes/class-admin-interface.php:170
+msgid "Edit"
+msgstr ""
+
+#: includes/class-admin-interface.php:173
+msgid "Delete"
+msgstr ""
+
+#: includes/class-admin-interface.php:185
+msgid "Add New Record"
+msgstr ""
+
+#: includes/class-admin-interface.php:200
+msgid "Save Record"
+msgstr ""
+
+#: includes/class-admin-interface.php:203
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-admin-interface.php:210
+msgid "Plugin Settings"
+msgstr ""
+
+#: includes/class-admin-interface.php:220
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: includes/class-admin-interface.php:230
+msgid "Search Delay (ms)"
+msgstr ""
+
+#: includes/class-admin-interface.php:235
+msgid "Delay in milliseconds before performing search after user stops typing."
+msgstr ""
+
+#: includes/class-admin-interface.php:240
+msgid "Results Per Page"
+msgstr ""
+
+#: includes/class-admin-interface.php:245
+msgid "Maximum number of search results to display per page."
+msgstr ""
+
+#: includes/class-admin-interface.php:250
+msgid "Enable Search Highlighting"
+msgstr ""
+
+#: includes/class-admin-interface.php:253
+msgid "Highlight search terms in results"
+msgstr ""
+
+#: includes/class-admin-interface.php:258
+msgid "Detail Page Title"
+msgstr ""
+
+#: includes/class-admin-interface.php:261
+msgid "Title displayed on individual record detail pages."
+msgstr ""
+
+#: includes/class-admin-interface.php:266
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/class-admin-interface.php:269
+msgid "Custom CSS to style the search interface. Leave empty to use default styles."
+msgstr ""
+
+#: includes/class-admin-interface.php:275
+msgid "Save Settings"
+msgstr ""
+
+#: includes/class-admin-interface.php:280
+msgid "Shortcode Usage"
+msgstr ""
+
+#: includes/class-admin-interface.php:281
+msgid "Use the following shortcode to display the search interface on any page or post:"
+msgstr ""
+
+#: includes/class-admin-interface.php:284
+msgid "Shortcode Attributes"
+msgstr ""
+
+#: includes/class-admin-interface.php:286
+msgid "Custom placeholder text for search input"
+msgstr ""
+
+#: includes/class-admin-interface.php:287
+msgid "Show column filter dropdown (true/false)"
+msgstr ""
+
+#: includes/class-admin-interface.php:288
+msgid "Maximum number of results to show"
+msgstr ""
+
+#: includes/class-admin-interface.php:291
+msgid "Example"
+msgstr ""
+
+#: includes/class-frontend-search.php:25
+msgid "Search..."
+msgstr ""
+
+#: includes/class-frontend-search.php:35
+msgid "All Columns"
+msgstr ""
+
+#: includes/class-frontend-search.php:45
+msgid "Clear"
+msgstr ""
+
+#: includes/class-frontend-search.php:50
+msgid "No results found. Try adjusting your search terms."
+msgstr ""
+
+#: includes/class-frontend-search.php:53
+msgid "An error occurred while searching. Please try again."
+msgstr ""
+
+#: includes/class-frontend-search.php:95
+msgid "Record"
+msgstr ""
+
+#: includes/class-frontend-search.php:130
+msgid "Database Search"
+msgstr ""
+
+#: includes/class-frontend-search.php:150
+msgid "Search..."
+msgstr ""
+
+#: includes/class-frontend-search.php:180
+msgid "Search"
+msgstr ""
+
+#: includes/class-frontend-search.php:200
+msgid "All Columns"
+msgstr ""
+
+#: includes/class-frontend-search.php:220
+msgid "Record Details"
+msgstr ""
+
+#: includes/class-frontend-search.php:225
+msgid "← Back"
+msgstr ""
+
+#: assets/js/frontend.js:45
+msgid "Searching..."
+msgstr ""
+
+#: assets/js/frontend.js:46
+msgid "No results found"
+msgstr ""
+
+#: assets/js/frontend.js:47
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: assets/js/frontend.js:200
+msgid "1 result found"
+msgstr ""
+
+#: assets/js/frontend.js:201
+msgid "results found"
+msgstr ""
+
+#: assets/js/frontend.js:210
+msgid "0 results found"
+msgstr ""
+
+#: assets/js/frontend.js:250
+msgid "Record"
+msgstr ""
+
+#: assets/js/frontend.js:280
+msgid "ID: "
+msgstr ""
+
+#: assets/js/frontend.js:281
+msgid "View Details"
+msgstr ""
+
+#: assets/js/admin.js:45
+msgid "Are you sure you want to delete this record?"
+msgstr ""
+
+#: assets/js/admin.js:46
+msgid "Saving..."
+msgstr ""
+
+#: assets/js/admin.js:47
+msgid "Saved!"
+msgstr ""
+
+#: assets/js/admin.js:48
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: assets/js/admin.js:100
+msgid "Please select a file to upload."
+msgstr ""
+
+#: assets/js/admin.js:120
+msgid "Uploading... "
+msgstr ""
+
+#: assets/js/admin.js:130
+msgid "File uploaded successfully!"
+msgstr ""
+
+#: assets/js/admin.js:160
+msgid "Edit Record"
+msgstr ""
+
+#: assets/js/admin.js:161
+msgid "Add New Record"
+msgstr ""
+
+#: assets/js/admin.js:200
+msgid "Save Record"
+msgstr ""
+
+#: assets/js/admin.js:250
+msgid "Record deleted successfully!"
+msgstr ""
+
+#: assets/js/admin.js:280
+msgid "Are you sure you want to clear all data? This action cannot be undone."
+msgstr ""
+
+#: assets/js/admin.js:300
+msgid "All data cleared successfully!"
+msgstr ""
+
+#: assets/js/admin.js:350
+msgid "Dismiss this notice."
+msgstr ""

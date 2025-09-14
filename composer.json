@@ -1,0 +1,61 @@
+{
+    "name": "u1145h/wp-database-search",
+    "description": "A powerful WordPress plugin offering a single dynamic search bar shortcode that allows users to search live across all imported Excel/CSV data fields.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "u1145h",
+            "email": "contact@ullashroy.site",
+            "homepage": "https://ullashroy.site"
+        }
+    ],
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "search",
+        "database",
+        "excel",
+        "csv",
+        "ajax",
+        "shortcode"
+    ],
+    "homepage": "https://ullashroy.site/wp-database-search",
+    "support": {
+        "issues": "https://github.com/u1145h/wp-database-search/issues",
+        "source": "https://github.com/u1145h/wp-database-search"
+    },
+    "require": {
+        "php": ">=7.4",
+        "phpoffice/phpspreadsheet": "^1.29"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "wp-coding-standards/wpcs": "^2.3",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "WP_Database_Search\\": "includes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WP_Database_Search\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpcs": "phpcs --standard=WordPress --extensions=php --ignore=vendor/ .",
+        "phpcbf": "phpcbf --standard=WordPress --extensions=php --ignore=vendor/ .",
+        "compatibility": "phpcs --standard=PHPCompatibility --extensions=php --ignore=vendor/ ."
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "wordpress-install-dir": "wp"
+    }
+}
