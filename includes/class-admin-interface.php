@@ -307,7 +307,9 @@ class WP_Database_Search_Admin_Interface {
      */
     private function render_settings_page() {
         $settings = get_option('wp_database_search_settings', array());
-        
+        $all_columns = $this->database_manager->get_column_names();
+        $filter_columns = get_option('wp_database_search_filter_columns', $all_columns);
+
         // Handle form submission
         if (isset($_POST['submit']) && wp_verify_nonce($_POST['_wpnonce'], 'wp_database_search_settings')) {
             $new_settings = array(
@@ -317,20 +319,24 @@ class WP_Database_Search_Admin_Interface {
                 'custom_css' => sanitize_textarea_field($_POST['custom_css'] ?? ''),
                 'detail_page_title' => sanitize_text_field($_POST['detail_page_title'] ?? 'Record Details')
             );
-            
             update_option('wp_database_search_settings', $new_settings);
             $settings = $new_settings;
-            
+
+            // Save filter columns
+            $selected_columns = isset($_POST['filter_columns']) && is_array($_POST['filter_columns'])
+                ? array_map('sanitize_text_field', $_POST['filter_columns'])
+                : $all_columns;
+            update_option('wp_database_search_filter_columns', $selected_columns);
+            $filter_columns = $selected_columns;
+
             echo '<div class="notice notice-success"><p>' . __('Settings saved successfully!', 'wp-database-search') . '</p></div>';
         }
-        
+
         ?>
         <div class="wp-database-search-settings">
             <h2><?php _e('Plugin Settings', 'wp-database-search'); ?></h2>
-            
             <form method="post" action="">
                 <?php wp_nonce_field('wp_database_search_settings'); ?>
-                
                 <table class="form-table">
                     <tr>
                         <th scope="row">
@@ -392,7 +398,20 @@ class WP_Database_Search_Admin_Interface {
                         </td>
                     </tr>
                 </table>
-                
+
+                <?php if (!empty($all_columns)): ?>
+                <h3><?php _e('Frontend Filter Options', 'wp-database-search'); ?></h3>
+                <p><?php _e('Select which columns should be available as filter options in the frontend search bar:', 'wp-database-search'); ?></p>
+                <div style="margin-bottom: 20px;">
+                    <?php foreach ($all_columns as $col): ?>
+                        <label style="display:inline-block; margin-right:20px;">
+                            <input type="checkbox" name="filter_columns[]" value="<?php echo esc_attr($col); ?>" <?php checked(in_array($col, $filter_columns)); ?> />
+                            <?php echo esc_html($col); ?>
+                        </label>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
+
                 <p class="submit">
                     <input type="submit" name="submit" class="button button-primary" value="<?php _e('Save Settings', 'wp-database-search'); ?>" />
                 </p>

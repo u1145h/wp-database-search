@@ -51,7 +51,9 @@ class WP_Database_Search_Frontend_Search {
         ), $atts, 'wp_database_search');
         
         // Get available columns for filter dropdown
-        $columns = $this->database_manager->get_column_names();
+        $all_columns = $this->database_manager->get_column_names();
+        $filter_columns = get_option('wp_database_search_filter_columns', $all_columns);
+        $columns = array_values(array_intersect($all_columns, $filter_columns));
         
         ob_start();
         ?>
